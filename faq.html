@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ · warp.cd</title>
+<meta name="description" content="Common questions about warp.cd: the 80% share, shipping, disc format, rights, and payouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__in">
+    <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a class="nav__link" href="index.html">The shelf</a>
+      <a class="nav__link" href="developers.html">For developers</a>
+      <a class="nav__link" href="faq.html" aria-current="page">FAQ</a>
+    </nav>
+    <div class="nav__spacer"></div>
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></svg></button>
+      <button class="icon-btn" id="shelfBtn" aria-label="Open your shelf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 6l1 13.5a1.5 1.5 0 0 0 1.5 1.4h11a1.5 1.5 0 0 0 1.5-1.4L20 6M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6"/></svg>
+        <span class="shelf-count" id="shelfCount">0</span>
+      </button>
+      <a class="btn btn--primary btn--sm nav__cta" href="developers.html#apply">Apply your game</a>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Questions</span>
+    <h1>Common questions.</h1>
+    <p>Everything about the split, the discs, shipping, and getting paid. Still stuck? Email us any time.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="faq reveal" id="faqList">
+      <div class="qa"><button class="qa__q" aria-expanded="false">What exactly is the 80% share?<span class="plus"></span></button><div class="qa__a"><p>You receive 80% of net receipts on every copy sold. That is the sale price after payment-processing fees. A $20 disc pays you $16. Our 20% covers burning and printing each disc and running the shop.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">Who handles shipping and returns?<span class="plus"></span></button><div class="qa__a"><p>We print and ship every order. Buyers pay shipping at checkout, usually around $7 depending on where it is going. We handle support and any returns, so you never touch a padded envelope.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">What format is the disc?<span class="plus"></span></button><div class="qa__a"><p>A 4.7GB DVD. When you order, we format a fresh disc, burn the game with its offline installer, and print the artwork onto the disc and the case sleeve.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">Do I keep my rights and my digital sales?<span class="plus"></span></button><div class="qa__a"><p>Always. There is no exclusivity. Keep selling on Steam, itch, or anywhere else. A warp.cd edition is simply another way for people to own your game, and you can pull the edition whenever you like.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">Is there any upfront cost?<span class="plus"></span></button><div class="qa__a"><p>None. Because we burn on demand, there is nothing to pre-order or warehouse. We only make a disc when someone buys one, so there is no risk of unsold stock.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">How do I get paid?<span class="plus"></span></button><div class="qa__a"><p>Payouts go out monthly with a clear statement of copies sold and receipts. Set a threshold that suits you, and we send your share by your preferred method.</p></div></div>
+      <div class="qa"><button class="qa__q" aria-expanded="false">How much does shipping cost?<span class="plus"></span></button><div class="qa__a"><p>The buyer pays shipping at checkout. It is usually about $7, but it varies with the destination and the shipping method chosen.</p></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__brand">
+      <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+      <p>Physical media is a non-negotiable part of gaming culture. We burn indie games to DVD on demand, print the art on the disc and the case, and hand developers 80%.</p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col"><h4>Explore</h4><a href="index.html">The shelf</a><a href="index.html#incl">In every case</a><a href="faq.html">FAQ</a></div>
+      <div class="footer__col"><h4>Developers</h4><a href="developers.html#apply">Apply your game</a><a href="developers.html#split">Earnings</a><a href="developers.html#how">How it works</a></div>
+      <div class="footer__col"><h4>Say hello</h4><a href="mailto:warpdriveconsole@gmail.com">warpdriveconsole@gmail.com</a></div>
+    </div>
+  </div>
+  <div class="footer__legal"><span>© <span id="year">2026</span> warp.cd. Pressed to order.</span><span>A demo storefront. No orders are placed and no payments are taken.</span></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your shelf" aria-hidden="true">
+  <div class="drawer__head"><h3>Your shelf</h3><button class="icon-btn" id="drawerClose" aria-label="Close shelf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer__body" id="drawerBody"></div>
+  <div class="drawer__foot" id="drawerFoot" style="display:none">
+    <div class="drawer__total"><span class="lbl">Subtotal</span><span class="amt mono" id="drawerTotal">$0.00</span></div>
+    <p class="drawer__note">You pay shipping at checkout, usually about $7. Developers earn 80% of every copy.</p>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>

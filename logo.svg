@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="warp.cd">
+  <defs>
+    <radialGradient id="wcDisc" gradientUnits="userSpaceOnUse" cx="30" cy="31" r="31">
+      <stop offset="0" stop-color="#ffe2f0"/>
+      <stop offset=".34" stop-color="#ff8ec0"/>
+      <stop offset=".64" stop-color="#f0509a"/>
+      <stop offset=".86" stop-color="#d13d7d"/>
+      <stop offset="1" stop-color="#af3470"/>
+    </radialGradient>
+    <radialGradient id="wcGloss" gradientUnits="userSpaceOnUse" cx="24" cy="24" r="21">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="wcCarve">
+      <rect width="64" height="64" fill="#fff"/>
+      <path d="M33 15 C30 24 30 35 35 44 C37 47 41 46 42 42 C39 34 39 24 40 17 C39 15 35 14 33 15 Z" fill="#000"/>
+      <ellipse cx="54" cy="38" rx="3.6" ry="4.4" fill="#000"/>
+    </mask>
+  </defs>
+  <g mask="url(#wcCarve)">
+    <path d="M21 23 C18 12 23 3 28 4 C34 4 38 13 36 23 C31 26 26 26 21 23 Z" fill="url(#wcDisc)" stroke="#9c2f68" stroke-width="1"/>
+    <circle cx="33" cy="37" r="24" fill="url(#wcDisc)" stroke="#9c2f68" stroke-width="1.4"/>
+    <g fill="none">
+      <circle cx="33" cy="37" r="20.5" stroke="#ffffff" stroke-opacity=".10"/>
+      <circle cx="33" cy="37" r="17.5" stroke="#000000" stroke-opacity=".08"/>
+      <circle cx="33" cy="37" r="14.5" stroke="#ffffff" stroke-opacity=".10"/>
+      <circle cx="33" cy="37" r="11.5" stroke="#000000" stroke-opacity=".08"/>
+      <circle cx="33" cy="37" r="8.5" stroke="#ffffff" stroke-opacity=".10"/>
+      <circle cx="33" cy="37" r="5.5" stroke="#000000" stroke-opacity=".08"/>
+    </g>
+    <circle cx="33" cy="37" r="24" fill="url(#wcGloss)"/>
+  </g>
+</svg>

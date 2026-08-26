@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>warp.cd · indie games pressed to disc</title>
+<meta name="description" content="warp.cd burns indie games onto 4.7GB DVDs on demand, prints the art on the disc and case, and ships them. Developers keep 80% of net receipts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__in">
+    <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a class="nav__link" href="index.html" aria-current="page">The shelf</a>
+      <a class="nav__link" href="developers.html">For developers</a>
+      <a class="nav__link" href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav__spacer"></div>
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></svg></button>
+      <button class="icon-btn" id="shelfBtn" aria-label="Open your shelf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 6l1 13.5a1.5 1.5 0 0 0 1.5 1.4h11a1.5 1.5 0 0 0 1.5-1.4L20 6M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6"/></svg>
+        <span class="shelf-count" id="shelfCount">0</span>
+      </button>
+      <a class="btn btn--primary btn--sm nav__cta" href="developers.html#apply">Apply your game</a>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero__in">
+    <div class="hero__copy">
+      <span class="eyebrow">Physical media is non-negotiable</span>
+      <h1 class="hero__title">Hold your favorite <span class="hl">games</span> again.</h1>
+      <p class="hero__sub">When someone orders, we burn your game to a 4.7GB DVD, print the artwork on the disc and the case, and ship it out. Developers keep <strong>80%</strong>.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#shelf">Browse the shelf</a>
+        <a class="btn btn--metal" href="developers.html#apply">Submit your game</a>
+      </div>
+    </div>
+    <div class="disc-stage" aria-hidden="true">
+      <div class="sleeve"></div>
+      <div class="disc-wrap"><div class="disc"></div></div>
+      <div class="disc-shine"></div>
+      <div class="disc-hole"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shelf">
+  <div class="wrap">
+    <div class="shelf-head reveal">
+      <div class="section__head" style="margin-bottom:0">
+        <span class="eyebrow">The shelf</span>
+        <h2 class="section__title">Pick one, we'll burn it to disc.</h2>
+        <p class="section__desc">Every edition is a 4.7GB DVD in a printed case, burned to order with the game and its installer.</p>
+      </div>
+    </div>
+    <div class="grid" id="shelfGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="incl">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <span class="eyebrow">In every case</span>
+      <h2 class="section__title">Every order includes.</h2>
+    </div>
+    <div class="incl reveal">
+      <div class="incl__item"><span class="incl__disc"></span><div><div class="incl__t">A 4.7GB DVD</div><div class="incl__d">Formatted and burned with your game the moment it's ordered.</div></div></div>
+      <div class="incl__item"><span class="incl__disc"></span><div><div class="incl__t">An offline installer</div><div class="incl__d">It lives on the disc. Install and play with no launcher and no internet.</div></div></div>
+      <div class="incl__item"><span class="incl__disc"></span><div><div class="incl__t">Disc-face artwork</div><div class="incl__d">Your game's design printed straight onto the disc surface.</div></div></div>
+      <div class="incl__item"><span class="incl__disc"></span><div><div class="incl__t">A printed case</div><div class="incl__d">The same design printed onto the DVD case sleeve.</div></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__brand">
+      <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+      <p>Physical media is a non-negotiable part of gaming culture. We burn indie games to DVD on demand, print the art on the disc and the case, and hand developers 80%.</p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col"><h4>Explore</h4><a href="index.html">The shelf</a><a href="index.html#incl">In every case</a><a href="faq.html">FAQ</a></div>
+      <div class="footer__col"><h4>Developers</h4><a href="developers.html#apply">Apply your game</a><a href="developers.html#split">Earnings</a><a href="developers.html#how">How it works</a></div>
+      <div class="footer__col"><h4>Say hello</h4><a href="mailto:warpdriveconsole@gmail.com">warpdriveconsole@gmail.com</a></div>
+    </div>
+  </div>
+  <div class="footer__legal"><span>© <span id="year">2026</span> warp.cd. Pressed to order.</span><span>A demo storefront. No orders are placed and no payments are taken.</span></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" aria-label="Your shelf" aria-hidden="true">
+  <div class="drawer__head"><h3>Your shelf</h3>
+    <button class="icon-btn" id="drawerClose" aria-label="Close shelf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="drawer__body" id="drawerBody"></div>
+  <div class="drawer__foot" id="drawerFoot" style="display:none">
+    <div class="drawer__total"><span class="lbl">Subtotal</span><span class="amt mono" id="drawerTotal">$0.00</span></div>
+    <p class="drawer__note">You pay shipping at checkout, usually about $7. Developers earn 80% of every copy.</p>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__card">
+    <button class="modal__close" id="modalClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal__art" id="modalArt"><div class="m-spine" id="modalSpine"></div><div class="m-cd-wrap"><div class="m-cd"></div></div></div>
+    <div class="modal__body">
+      <span class="modal__tag" id="modalTag"></span>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <div class="modal__studio" id="modalStudio"></div>
+      <p class="modal__desc" id="modalDesc"></p>
+      <ul class="modal__incl">
+        <li><b></b>A 4.7GB DVD, burned with the game on order</li>
+        <li><b></b>Offline installer on the disc, no launcher needed</li>
+        <li><b></b>Artwork printed on the disc and the case sleeve</li>
+        <li><b></b>Ships worldwide. You pay shipping, usually about $7</li>
+      </ul>
+      <div class="modal__buy"><span class="modal__price mono" id="modalPrice"></span><button class="btn btn--primary" id="modalAdd">Add to shelf</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>

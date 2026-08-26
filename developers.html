@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For developers · warp.cd</title>
+<meta name="description" content="Put your indie game on a disc with warp.cd. See how an order works, price a copy, and apply. Developers keep 80% of net receipts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__in">
+    <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a class="nav__link" href="index.html">The shelf</a>
+      <a class="nav__link" href="developers.html" aria-current="page">For developers</a>
+      <a class="nav__link" href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav__spacer"></div>
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></svg></button>
+      <button class="icon-btn" id="shelfBtn" aria-label="Open your shelf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 6l1 13.5a1.5 1.5 0 0 0 1.5 1.4h11a1.5 1.5 0 0 0 1.5-1.4L20 6M9 6V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V6"/></svg>
+        <span class="shelf-count" id="shelfCount">0</span>
+      </button>
+      <a class="btn btn--primary btn--sm nav__cta" href="#apply">Apply your game</a>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">For developers</span>
+    <h1>Put your game on a disc.</h1>
+    <p>No upfront cost and no exclusivity. Keep selling digitally wherever you like. A warp.cd edition just gives players something they can hold.</p>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 class="section__title">How an order works.</h2>
+      <p class="section__desc">We only make a disc when someone buys one, so there is nothing to pre-order or warehouse.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step__n">01</div>
+        <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5M8 13h8M8 17h5"/></svg></div>
+        <div class="step__t">You apply</div>
+        <div class="step__d">Send the game, a build or store link, and a price between $15 and $30. Takes about five minutes.</div>
+        <div class="step__line"></div>
+      </div>
+      <div class="step">
+        <div class="step__n">02</div>
+        <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg></div>
+        <div class="step__t">We set it up</div>
+        <div class="step__d">We prep the disc artwork and an offline installer, then list your edition on the shelf.</div>
+        <div class="step__line"></div>
+      </div>
+      <div class="step">
+        <div class="step__n">03</div>
+        <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div>
+        <div class="step__t">Someone orders</div>
+        <div class="step__d">We format a 4.7GB DVD, burn the game to it, and print the design on the disc and the case sleeve.</div>
+        <div class="step__line"></div>
+      </div>
+      <div class="step">
+        <div class="step__n">04</div>
+        <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14M6 11l6 6 6-6"/><path d="M5 21h14"/></svg></div>
+        <div class="step__t">It ships</div>
+        <div class="step__d">The disc goes out and the buyer covers shipping, usually about $7. You keep 80%, paid monthly.</div>
+        <div class="step__line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section split" id="split">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <span class="eyebrow">The split</span>
+      <h2 class="section__title">Price a copy, see your cut.</h2>
+      <p class="section__desc">Developers keep 80% of net receipts on every disc sold. Our 20% covers burning and printing each order. There is no upfront cost.</p>
+    </div>
+    <div class="calc reveal">
+      <div>
+        <div class="calc__label">Retail price per copy</div>
+        <div class="calc__price-row"><span class="calc__prefix">$</span><input class="calc__input mono" id="priceInput" type="number" min="15" max="30" step="1" value="20" inputmode="decimal" aria-label="Retail price in dollars"></div>
+        <input class="calc__range" id="priceRange" type="range" min="15" max="30" step="1" value="20" aria-label="Retail price slider">
+        <p class="calc__hint">Drag the slider or type any price from $15 to $30.</p>
+      </div>
+      <div class="payout">
+        <div class="payout__cap">You keep</div>
+        <div class="payout__num mono" id="devCut">$16.00</div>
+        <div class="payout__sub">per copy on a <span class="mono" id="priceEcho">$20.00</span> disc</div>
+        <div class="payout__bar" aria-hidden="true"><i class="dev" style="width:80%"></i><i class="us" style="width:20%"></i></div>
+        <div class="payout__legend"><span>You 80%</span><span id="warpCut">warp.cd $4.00</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apply">
+  <div class="wrap">
+    <div class="apply__grid">
+      <aside class="apply__aside reveal">
+        <span class="eyebrow">Apply</span>
+        <h2>Send us your game.</h2>
+        <p>Fill this in and your email app opens with the application ready to send to our team. We read every submission and reply within a few days.</p>
+        <ul class="aside-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>You keep 80% of net receipts.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Burned on demand, so there's nothing to warehouse.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>You approve the disc and case art.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Leave any time. The rights stay yours.</li>
+        </ul>
+      </aside>
+
+      <div class="form reveal">
+        <form id="applyForm" novalidate>
+          <div class="field">
+            <label for="fGame">Game title</label>
+            <input class="control" id="fGame" name="game" placeholder="e.g. Lantern &amp; Loam" required>
+            <div class="err">Tell us what the game is called.</div>
+          </div>
+          <div class="field field--row">
+            <div><label for="fStudio">Studio or your name</label><input class="control" id="fStudio" name="studio" placeholder="e.g. Mossgarden" required><div class="err">We need a name for the credits.</div></div>
+            <div><label for="fEmail">Email</label><input class="control" id="fEmail" name="email" type="email" placeholder="you@studio.com" required><div class="err">Enter an email we can reply to.</div></div>
+          </div>
+          <div class="field field--row">
+            <div><label for="fPlatform">Platform</label><select class="control" id="fPlatform" name="platform"><option>Windows</option><option>macOS</option><option>Linux</option><option>Windows + macOS</option><option>All three</option></select></div>
+            <div><label for="fPrice">Retail price (USD)</label><input class="control mono" id="fPrice" name="price" type="number" min="15" max="30" step="1" value="20" required><div class="earn-echo" id="formEarn">You'd earn $16.00 per copy</div></div>
+          </div>
+          <div class="field"><label for="fPitch">The pitch</label><textarea class="control" id="fPitch" name="pitch" placeholder="A sentence or two on what makes it special, and who it's for." required></textarea><div class="err">A line or two helps us picture the edition.</div></div>
+          <div class="field"><label for="fLink">Build or store link</label><input class="control" id="fLink" name="link" placeholder="itch.io, Steam, or a download" required><div class="err">Add a link so we can play it.</div></div>
+          <label class="agree"><input type="checkbox" id="fAgree"> I have the rights to distribute this game and agree to the 80/20 net-receipt split.</label>
+          <div class="form__actions"><button class="btn btn--primary btn--block" type="submit">Send application</button><p class="form-note">This opens your email app addressed to warpdriveconsole@gmail.com.</p></div>
+        </form>
+        <div class="success" id="applySuccess" role="status">
+          <div class="success__disc"></div>
+          <h3>Application ready to send.</h3>
+          <p id="successMsg">Your email app should open with the application ready to send. If it does not, email us directly and quote this reference.</p>
+          <div class="ref" id="applyRef">WCD-0000</div>
+          <p class="form-note" style="margin-top:-.5rem;margin-bottom:1.2rem">Didn't open automatically? <a id="applyMailLink" href="#" style="color:var(--pink);font-weight:700">Open your email app</a>.</p>
+          <button class="btn btn--metal btn--sm" id="applyAnother">Submit another game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__brand">
+      <a href="index.html" class="brand" aria-label="warp.cd home"><img class="brand__mark" src="logo.svg" alt=""><span>warp<span class="tld">.cd</span></span></a>
+      <p>Physical media is a non-negotiable part of gaming culture. We burn indie games to DVD on demand, print the art on the disc and the case, and hand developers 80%.</p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col"><h4>Explore</h4><a href="index.html">The shelf</a><a href="index.html#incl">In every case</a><a href="faq.html">FAQ</a></div>
+      <div class="footer__col"><h4>Developers</h4><a href="#apply">Apply your game</a><a href="#split">Earnings</a><a href="#how">How it works</a></div>
+      <div class="footer__col"><h4>Say hello</h4><a href="mailto:warpdriveconsole@gmail.com">warpdriveconsole@gmail.com</a></div>
+    </div>
+  </div>
+  <div class="footer__legal"><span>© <span id="year">2026</span> warp.cd. Pressed to order.</span><span>A demo storefront. No orders are placed and no payments are taken.</span></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your shelf" aria-hidden="true">
+  <div class="drawer__head"><h3>Your shelf</h3><button class="icon-btn" id="drawerClose" aria-label="Close shelf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer__body" id="drawerBody"></div>
+  <div class="drawer__foot" id="drawerFoot" style="display:none">
+    <div class="drawer__total"><span class="lbl">Subtotal</span><span class="amt mono" id="drawerTotal">$0.00</span></div>
+    <p class="drawer__note">You pay shipping at checkout, usually about $7. Developers earn 80% of every copy.</p>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
